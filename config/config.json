@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "Fenn-IT",
+    "base_url": "/",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "200",
+    "logo_height": "48",
+    "logo_text": "Fenn-IT"
+  },
+
+  "settings": {
+    "pagination": 4,
+    "summary_length": 200,
+    "blog_folder": "blogs"
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label": "Contact Us",
+    "link": "/contact"
+  },
+
+  "params": {
+    "contact_form_action": "",
+    "tag_manager_id": "",
+    "footer_content": "Your trusted technology partner for secure, sustainable growth across Europe, the Middle East, and Africa.",
+    "copyright": "© 2025 Fenn-IT. All rights reserved."
+  },
+
+  "metadata": {
+    "meta_author": "Fenn-IT",
+    "meta_image": "",
+    "meta_description": "Empowering SMEs and startups with enterprise-grade technology solutions for secure, sustainable growth across Europe, the Middle East, and Africa."
+  }
+}
