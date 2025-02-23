@@ -4,15 +4,15 @@ import Link from "next/link";
 
 const HomeBanner = ({ banner }) => {
   return (
-    <section className="section pb-[50px]">
+    <section className="section pb-[50px] bg-primary-gradient text-white">
       <div className="container">
-        <div className="row text-center">
+        <div className="text-center row">
           <div className="mx-auto lg:col-10">
-            <h1 className="font-primary font-bold">{banner.title}</h1>
-            <p className="mt-4">{markdownify(banner.content)}</p>
+            <h1 className="font-bold text-white font-primary">{banner.title}</h1>
+            <p className="mt-4 text-white/90">{markdownify(banner.content)}</p>
             {banner.button.enable && (
               <Link
-                className="btn btn-primary mt-4"
+                className="mt-4 btn btn-primary"
                 href={banner.button.link}
                 rel={banner.button.rel}
               >

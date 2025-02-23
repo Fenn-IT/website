@@ -12,7 +12,7 @@ const Services = ({ services }) => {
     return (
       <section
         key={`service-${index}`}
-        className={`section ${isOdd && "bg-theme-light"}`}
+        className={`section ${isOdd && "bg-primary-gradient text-white"}`}
       >
         <div className="container">
           <div className="items-center gap-8 md:grid md:grid-cols-2">
@@ -44,12 +44,12 @@ const Services = ({ services }) => {
                 !isOdd && "md:order-1"
               }`}
             >
-              <h2 className="font-bold leading-[40px]">{service?.title}</h2>
-              <p className="mb-2 mt-4">{service?.content}</p>
+              <h2 className={`font-bold leading-[40px] ${isOdd && "text-white"}`}>{service?.title}</h2>
+              <p className={`mb-2 mt-4 ${isOdd && "text-white/90"}`}>{service?.content}</p>
               {service.button.enable && (
                 <Link
                   href={service?.button.link}
-                  className="cta-link inline-flex items-center text-primary"
+                  className={`cta-link inline-flex items-center ${isOdd ? "text-white" : "text-primary"}`}
                 >
                   {service?.button.label}
                   <Image

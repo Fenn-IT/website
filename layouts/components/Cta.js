@@ -4,9 +4,9 @@ import Link from "next/link";
 
 function Cta({ cta }) {
   return (
-    <section className="section px-4">
-      <div className="section container rounded-xl shadow">
-        <div className="row  mx-auto items-center justify-center">
+    <section className="px-4 section">
+      <div className="container text-white shadow section rounded-xl bg-primary-gradient">
+        <div className="items-center justify-center mx-auto row">
           <div className="md:col-5 lg:col-4">
             <Image
               className="w-full"
@@ -17,11 +17,11 @@ function Cta({ cta }) {
             />
           </div>
           <div className="mt-5 text-center md:col-6 lg:col-5 md:mt-0 md:text-left">
-            <h2>{cta?.title}</h2>
-            <p className="mt-6">{markdownify(cta?.content)}</p>
+            <h2 className="text-white">{cta?.title}</h2>
+            <p className="mt-6 text-white/90">{markdownify(cta?.content)}</p>
             {cta.button.enable && (
               <Link
-                className="btn btn-primary mt-4"
+                className="mt-4 btn btn-primary"
                 href={cta.button.link}
                 rel={cta.button.rel}
               >

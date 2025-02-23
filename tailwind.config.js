@@ -52,6 +52,9 @@ module.exports = {
         border: theme.colors.default.theme_color.border,
         "theme-light": theme.colors.default.theme_color.theme_light,
       },
+      backgroundImage: {
+        'primary-gradient': theme.colors.default.theme_color.gradient,
+      },
       fontSize: {
         base: font_base + "px",
         h1: h1 + "rem",
